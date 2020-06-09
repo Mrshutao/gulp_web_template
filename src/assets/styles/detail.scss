@@ -1,0 +1,81 @@
+.detail {
+  overflow: hidden;
+  background: #f8f8f8;
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-weight: 400;
+    font-size: 0.18rem;
+    color: #333;
+    font-weight: 400;
+    width: 100%;
+    height: 0.52rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+  }
+  .video-wrap {
+    width: 100%;
+    height: auto;
+
+    video {
+      width: 100%;
+    }
+  }
+  .recommend-video {
+    margin-top: 0.08rem;
+    background: #fff;
+    overflow: hidden;
+    .header {
+      display: block;
+      padding: 0.16rem 0.17rem;
+      font-size: 0.16rem;
+      color: #333;
+      font-weight: bold;
+    }
+    .list {
+      padding: 0.17rem;
+      li {
+        a {
+          display: flex;
+          justify-content: space-between;
+          height: 0.7rem;
+          .intro {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+            .title {
+              font-size: 0.16rem;
+              color: #333;
+              margin-top: 0.04rem;
+            }
+            .description {
+              width: 100%;
+              font-size: 0.14rem;
+              overflow: hidden;
+              color: #848e98;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              line-height: 0.2rem;
+              font-weight: 400;
+            }
+          }
+          .pic {
+            width: 0.93rem;
+            height: 100%;
+            margin-left: 0.16rem;
+            border-radius: 0.02rem;
+          }
+        }
+      }
+    }
+  }
+}

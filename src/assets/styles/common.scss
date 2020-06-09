@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: PingFangSC-Regular, PingFang SC, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  padding: 0.52rem 0;
+}
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
+}
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+}
+input,
+textarea,
+video {
+  -webkit-appearance: none;
+  resize: none;
+}
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont.eot?t=1591502534359"); /* IE9 */
+  src: url("../fonts/iconfont.eot?t=1591502534359#iefix")
+      format("embedded-opentype"),
+    url("../fonts/iconfont.woff?t=1591502534359") format("woff"),
+    url("../fonts/iconfont.ttf?t=1591502534359") format("truetype"); /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jilu:before {
+  content: "\e628";
+}
+
+.icon-home:before {
+  content: "\e69b";
+}
+
+.icon-telephone:before {
+  content: "\e6a2";
+}

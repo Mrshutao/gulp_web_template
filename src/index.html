@@ -1,0 +1,157 @@
+{% extends './common/layout.html' %} 
+{% block title %}网站首页{% endblock %}
+{% block link %}
+<!-- build:css assets/styles/index.css -->
+<link rel="stylesheet" href="assets/styles/index.css" />
+<!-- endbuild -->
+ <!-- build:css assets/styles/swiper.css -->
+<link rel="stylesheet" href="assets/styles/swiper.css" />
+<!-- endbuild -->
+<!-- build:css assets/styles/tab.css -->
+<link rel="stylesheet" href="assets/styles/tab.css" />
+<!-- endbuild -->
+{% endblock %} {% block content %}
+
+<div class="home">
+  <header>文化传媒模版</header>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <img class="swiper-slide" src="http://game.xiongyl.cn/upload/201911/1573903934.png"></img>
+      <img class="swiper-slide" src="http://game.xiongyl.cn/upload/201911/1573903934.png"></img>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="feature">
+    <div class="feature-header">我们的优势</div>
+      <ul class="feature-content">
+        <li>
+          <span class="feature-title">技术 | TECH</span>
+          <span class="feature-tip">技术 - TECH</span>
+          <img src="http://game.xiongyl.cn/upload/201911/1574085914.png"></img>
+        </li>
+        <li>
+          <span class="feature-title">2019-04-19</span>
+          <span class="feature-tip">创意 - IDEA</span>
+          <img src="http://game.xiongyl.cn/upload/201911/1573903934.png"></img>
+        </li>
+      </ul>
+  </div>
+  <div class="company">
+    <div class="card-header">
+      <span>公司简介</span>
+      <div class="header-extra">
+        <span>About Us</span>
+        <span>more ></span>
+      </div>
+    </div>
+    <div class="company-content">
+      <div class="intro-left">
+        <img src="assets/images/about_bg_1.jpg"></img>
+      </div>
+      <div class="intro-right">
+        <span class="intro-title">三大核心团队 <br/>为你量身定制方案</span>
+        <span class="intro-detail">现配备拥有优秀强大、经验丰富的三个团队——设计研发团队、影视团队及运营团队，分别针对公司的各项业务作业，灵活满足不同客户和人群的需求，积极应对市场的各种创新挑战。</span>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="card-header">
+      <span>团队展示</span>
+      <div class="header-extra">
+        <span>Team Show</span>
+        <span>more ></span>
+      </div>
+    </div>
+    <div class="team-content">
+      <ul>
+        <li class="team-item">
+          <img src="http://game.xiongyl.cn/upload/202006/1591021322.jpg"></img>
+          <div class="team-intro">
+            <span>吴设计师</span>
+            <span>设计师</span>
+          </div>
+        </li>
+        <li class="team-item">
+          <img src="http://game.xiongyl.cn/upload/202006/1591021321.jpg"></img>
+          <div class="team-intro">
+            <span>王总监</span>
+            <span>设计总监</span>
+          </div>
+        </li>
+        <li class="team-item">
+          <img src="http://game.xiongyl.cn/upload/202006/1591021320.jpg"></img>
+          <div class="team-intro">
+            <span>周管家</span>
+            <span>公司董事</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="room">
+    <div class="room-header">办公室相册</div>
+    <div class="room-content">
+      <img src="http://game.xiongyl.cn/templates/donglinbook/static/image/room_env_bg.jpg"></img>
+      <div class="room-tip">
+        <span>办公室环境</span>
+        <span>6张</span>
+      </div>
+    </div>
+  </div>
+  <div class="cooperation">
+    <div class="card-header">
+      <span>团队展示</span>
+      <div class="header-extra">
+        <span>Planning Program</span>
+        <span>more ></span>
+      </div>
+    </div>
+    <ul class="cooperation-content">
+      <li class="cooperation-item">
+        <span>合作伙伴1</span>
+      </li>
+      <li class="cooperation-item">
+        <span>合作伙伴1</span>
+      </li>
+      <li class="cooperation-item">
+        <span>合作伙伴1</span>
+        <span>Filmroduction</span>
+      </li>
+      <li class="cooperation-item">
+        <span>合作伙伴1</span>
+        <span>Filmroduction</span>
+      </li>
+    </ul>
+  </div>
+  <div class="contact">
+    <div class="contact-top">
+      <span class="ready">Hi,Are You Ready?</span>
+      <span class="ready-go">准备好了吗？<br/>那就与我们取得联系吧</span>
+    </div>
+    <div class="contact-mid">
+      有项目想和我们谈谈吗？您可以填写以下表格，让我们了解您的项目需求，这是一个非常好的开始，我将尽快与您取得联系。也欢迎您给我们写邮件或者打电话，让我们听到您的声音。
+    </div>
+    <div class="contact-bot">
+     <p>热&nbsp;&nbsp;&nbsp;&nbsp;线：000-0000000     020-0000000</p>
+     <p>地&nbsp;&nbsp;&nbsp;&nbsp;址：XXX省XXX市XXX区XXX路XXX号</p>
+     <p>E-mail：xxx@.co.m</p>
+    </div>
+  </div>
+</div>
+{% include "./common/tab.html" %}
+
+{% endblock %} {% block script %}
+<!-- build:js assets/scripts/swiper.js -->
+<script src="assets/scripts/swiper.js"></script>
+<!-- endbuild -->
+<script>
+  var mySwiper = new Swiper(".swiper-container", {
+    loop: true, // 循环模式选项
+    autoplay:true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
+
+{% endblock %}

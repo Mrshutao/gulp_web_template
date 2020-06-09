@@ -1,0 +1,34 @@
+{% extends './common/layout.html' %} {% block link %}
+<!-- build:css assets/styles/detail.css -->
+<link rel="stylesheet" href="assets/styles/detail.css" />
+<!-- endbuild -->
+{% endblock %} {% block content %}
+<div class="detail">
+  <header>电影专辑</header>
+  <div class="video-wrap">
+    <video
+      src="http://game.xiongyl.cn/upload/202006/1591449272269784.mp4"
+      controls="controls"
+    ></video>
+  </div>
+  <div class="recommend-video">
+    <span class="header">推荐视频-80</span>
+    <ul class="list">
+      <li>
+        <a>
+          <div class="intro">
+            <span class="title">科普一下广播业的兴起</span>
+            <span class="description">
+              自20世纪二十年代开始，广播逐渐在美国普及。这一新兴的传播方式在诞生初期曾极大地影响了唱片销售。原因很简单，古今中外人类的共性其实是一样的，免费的东西总是能吸引消费者。就象唱片商起诉互联网
+            </span>
+          </div>
+          <img
+            class="pic"
+            src="https://19470667.s61i.faiusr.com/2/AD0Iy7KkCRACGAAg1cjk5gUowN317QUw7gU4zAM!400x400.jpg"
+          />
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- build:css assets/styles/common.css -->
+    <link rel="stylesheet" href="assets/styles/common.css" />
+    <!-- endbuild -->
+
+    {% block link %}{% endblock %}
+  </head>
+
+  <body>
+    {% block content %}{% endblock %}
+    <!-- build:js assets/scripts/flexible.js -->
+    <script src="assets/scripts/flexible.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js assets/scripts/fastclick.js -->
+    <script src="assets/scripts/fastclick.js"></script>
+    <!-- endbuild -->
+    {% block script %}{% endblock %}
+  </body>
+</html>

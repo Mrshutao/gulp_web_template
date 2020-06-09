@@ -44,7 +44,7 @@ const script = () => {
 };
 
 const page = () => {
-  return src("src/*.html", {
+  return src("src/**/*.html", {
     base: "src",
   })
     .pipe(
@@ -92,7 +92,7 @@ const extra = () => {
 const serve = () => {
   watch("src/assets/styles/*.scss", style);
   watch("src/assets/scripts/*.js", script);
-  watch("src/*.html", page);
+  watch("src/**/*.html", page);
   watch(
     ["src/assets/images/**", "src/assets/fonts/**", "public/**"],
     bs.reload

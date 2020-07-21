@@ -1,4 +1,4 @@
-const { src, dest, parallel, series, watch } = require("gulp");
+const { src, dest, parallel, series, watch, registry } = require("gulp");
 const del = require("del");
 const browserSync = require("browser-sync");
 // const proxyMiddleware = require("http-proxy-middleware");
@@ -27,6 +27,7 @@ const style = () => {
 };
 
 const script = () => {
+  console.log(registry);
   return src("src/assets/scripts/*.js", {
     base: "src",
   })
@@ -139,6 +140,7 @@ const build = series(
   clean,
   parallel(series(compile, useref), extra, image, font)
 );
+
 const develop = series(compile, serve);
 
 module.exports = {
